@@ -29,7 +29,6 @@ function chapter_welcome_greeting(){
 
 function _chapter_welcome_load_greeting($role, &$content){
     global $user;
-    dsm($user);
     switch($role){
         case 1: //anonymous user
             $content['raw_markup'] = array(
@@ -74,3 +73,9 @@ function _chapter_welcome_load_greeting($role, &$content){
     }
 
 }
+
+
+/*
+ * NOTES:
+ *  -->look into passing $user into function
+ */
