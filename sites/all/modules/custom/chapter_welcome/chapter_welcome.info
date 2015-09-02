@@ -1,0 +1,4 @@
+name = Welcome Module
+description = Creates a Custom Greeting Page for Authenticated/Anonymous Users
+core = 7.x
+package = LULDB

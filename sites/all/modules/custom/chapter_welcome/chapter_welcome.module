@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function chapter_welcome_menu(){
+    $items = array();
+
+    $items['welcome'] = array(
+        'title' => 'Welcome!',
+        'page callback' => 'chapter_welcome_greeting',
+        'access arguments' => array('access content'),
+        'file' => 'chapter_welcome.greeting.inc',
+    );
+
+    return $items;
+}
+
